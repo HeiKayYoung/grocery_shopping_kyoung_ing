@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: "고딕";
+	text-decoration: none;
+}
+
+
+#lfd { 
+	text-align:right;
+	float: right;
+}
+
+
+
+table{
+	width:1800px;
+ 	height:300px;
+ 	border: solid; 
+	border-color: purple;
+	background-color: purple;
+	color:white;
+}

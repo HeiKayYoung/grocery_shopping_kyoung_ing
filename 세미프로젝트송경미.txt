@@ -1,0 +1,77 @@
+<진행상황(세부작업상황)>
+로그인기능완성
+로그아웃기능완성
+회원가입 비밀번호 일치 진행중
+게시판(공지사항) 리스트완성
+게시판 글쓰기완성
+게시판 수정 _ 파일수정 작업중
+게시판 삭제완성
+게시판 검색완성 
+
+--------------------------------
+<프로젝트관련 sql작성>
+
+[회원가입 sql]
+
+테이블 생성
+create table kmgromember(
+kmid varchar2(60) primary key,
+kmpwd1 varchar2(50) not null,
+kmname varchar2(60) not null,
+kmemail varchar2(70) ,
+kmcellphone varchar2 (20),
+kmaddr varchar2(100),
+kmgender varchar2(12),
+kmbirthday date,
+kmjoindate date
+);
+
+insert
+"insert into kmgromember values(?,?,?,?,?,?,?,?,sysdate)";
+
+update - 작업중
+
+delete - 작업중
+
+search
+"select kmid, kmpwd1 from kmgromember where kmid=?"; 
+
+
+
+[게시판(공지사항) sql]
+테이블생성
+create table kmgronoticeboard(
+kmno number primary key,
+kmtitle varchar2(100),
+kmcontent varchar2(1000),
+kmwriter varchar2(30),
+kmdate date,
+kmcnt number,
+kmfile varchar2(200));
+
+insert
+"insert into kmgronoticeboard values(kmgronoticeboard_kmno_seq.nextval,?,?,?,sysdate,0,?)";
+
+update
+"update kmgronoticeboard set kmcnt=? where kmno=?";
+
+delete
+String sql = "delete from kmgronoticeboard where kmno="+kmno;
+
+search
+String sql = "select kmno,kmtitle,kmcontent,kmwriter,kmdate,kmcnt,kmfile "
+				 + "from kmgronoticeboard where "
+				+ field + " like ?" + " order by kmno desc";
+				
+				
+insert
+
+write
+
+update
+
+del
+
+search
+
+기능별 캡쳐사진

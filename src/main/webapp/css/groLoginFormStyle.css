@@ -1,0 +1,44 @@
+@charset "UTF-8";
+* {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: "고딕";
+	text-decoration: none;
+}
+
+ a:link { color: red; text-decoration: none;}
+ a:visited { color: black; text-decoration: none;}
+ 
+.hole {
+	margin-top:110px;
+	width: 20%;
+}
+
+table tr {
+	height: 40px;
+}
+
+
+
+.pup1{
+	width: 260px;
+	height: 40px;
+	background-color: purple;
+	color: white;
+	border: 1px solid white;
+
+}
+.pup2{
+	width: 260px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid purple;
+	padding-top: 8px;
+}
+
+p{
+	font-family: "고딕";
+	color: #C72502;
+	
+}
